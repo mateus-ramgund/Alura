@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --cor_primaria: #FFFFFF;
+    --cor_secundaria: #f9f9f9c5;
+    --cor_botao: #167BF7;
+    --cor_terciaria: #C0C0C0;
+}
+
+body {
+    background-color: black;
+    color: var(--cor_primaria);
+}
+
+
+/* HERO */
+
+.container {
+    height: 100vh;
+    align-items: center;
+}
+
+.hero {
+    background-image: url(../images/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.topo > h1 {
+    font-size: 1.75rem;
+}
+
+.topo > img {
+    margin: 1em 0 2em 0;
+    width: 50%;
+}
+
+.botao1 {
+    background-color: var(--cor_botao);
+    color: var(--cor_primaria);
+    padding: 16px 0px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.botao2 {
+    border: 1px solid var(--cor_primaria);
+    color: var(--cor_primaria);
+    padding: 16px 0px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.topo > p {
+    font-size: 0.75rem;
+}
+
+.topo {
+    margin: 0 10em;
+}
+
+/* SESSÕES SEGUINTES */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.esquerda, .direita {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.esquerda p, .direita p {
+    color: var(--cor_secundaria);
+    font-size: 1rem;
+}
+
+.esquerda h2, .direita h2 {
+    color: var(--cor_primaria);
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.imagem_produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_produto > img {
+    width: 80%;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.botao3 {
+    background-color: var(--cor_botao);
+    color: var(--cor_primaria);
+    padding: 16px 0px;
+    width: 162px;
+    border-radius: 8px;
+    margin-top: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* DISPOSITIVOS */
+
+.centro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 60vh;
+    justify-content: center;
+}
+
+.centro h2 {
+    font-size: 3rem;
+}
+
+.dispositivos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 69px;
+}
+
+.dispositivos h3 {
+    font-size: 2rem;
+}
+
+.dispositivos img {
+    width: 100%;
+}
+
+.dispositivos_interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* RODAPÉ */ 
+
+.rodape {
+    text-align: center;
+    padding: 10%;
+}
+
+.menu_inferior {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.menu_inferior a {
+    font-size: 1rem;
+    color: var(--cor_primaria);
+    text-decoration: none;
+}
+
+.menu_inferior a:hover {
+    text-decoration: underline;
+}
+
+.rodape p {
+    font-size: 0.75rem;
+    color: var(--cor_terciaria);
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: none;
+        display: flex;
+    }
+
+    .topo {
+        margin: 0 2em;
+    }
+
+    .esquerda, .direita {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .imagem_produto {
+        display: block;
+    }
+
+    .features {
+        width: 90%;
+    }
+
+    .botao1, .botao2, .botao3 {
+        margin: 1em 0;
+        width: 100%;
+    }
+
+    .dispositivos {
+        display: block;
+    }
+
+    .centro {
+        height: auto;
+    }
+
+    .menu_inferior, .menu_inferior > a {
+        display: block;
+        margin: 5px;
+    }
+}
