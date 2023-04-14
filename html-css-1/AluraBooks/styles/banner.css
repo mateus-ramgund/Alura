@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.banner__principal {
+    background: var(--background_gradiente);
+    color: var(--cor_maisclara);
+    padding: 2.5em 2em;
+    text-align: center;
+}
+
+.banner__principal__titulo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.banner__principal__subtitulo {
+    font-weight: 500;
+    line-height: 24px;
+    margin: 1em 0;
+}
+
+.banner__principal__busca {
+    padding: 1em;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid var(--cor_maisclara);
+    background-color: transparent;
+    color: var(--cor_maisclara);
+}
+
+.banner__principal__busca:focus {
+    outline: none;
+}
+
+.banner__principal__busca::placeholder {
+    font-family: var(--fonte_principal);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor_maisclara);
+    text-align: center;
+    background: url(../images/Lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+}

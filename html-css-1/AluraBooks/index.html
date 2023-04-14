@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -42,10 +43,122 @@
         </div>
     </header>
     <main>
+        <section class="banner__principal">
+            <h2 class="banner__principal__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__principal__subtitulo">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" name="busca" id="busca" class="banner__principal__busca" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
 
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/livros/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+                    <div class="swiper-slide"><img src="images/livros/Guia Front-end.svg" alt="Livro sobre Front End"></div>
+                    <div class="swiper-slide"><img src="images/livros/Javascript.svg" alt="Livro sobre JavaScript"></div>
+                    <div class="swiper-slide"><img src="images/livros/Liderança.svg" alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="images/livros/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    ...
+                </div>
+                
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__superior">
+                    <div class="card__descricao">
+                        <h3 class="card__subtitulo">Talvez você também se interesse por...</h3>
+                        <h2 class="card__titulo">Angular 11 e Firebase</h2>
+                        <p class="card__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img class="card__img" src="images/Angular.svg" alt="Angular">
+                </div>
+                <div class="card__inferior">
+                    <div class="card__icones">
+                        <img class="card__favoritos" src="images/Favoritos.svg" alt="Favoritar">
+                        <img class="card__carrinho" src="images/Compras.svg" alt="Acessar carrinho">
+                    </div>
+                    <a href="#" class="card__botao">Saiba mais</a>
+                </div>
+            </div>
+
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/Nodejs.svg" alt="Livro sobre Arquitetura"></div>
+                    <div class="swiper-slide"><img src="images/MEAN.svg" alt="Livro sobre Front End"></div>
+                    <div class="swiper-slide"><img src="images/Tuning.svg" alt="Livro sobre JavaScript"></div>
+                    <div class="swiper-slide"><img src="images/Acessibilidade.svg" alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="images/livros/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    ...
+                </div>
+                
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__superior">
+                    <div class="card__descricao">
+                        <img class="card__nota" src="images/Estrelinhas.svg" alt="Nota">
+                        <h3 class="card__subtitulo">Autora do Mês</h3>
+                        <h2 class="card__titulo">Juliana Agarikov</h2>
+                        <p class="card__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img class="card__img" src="images/Perfil-escritora 1.png" alt="Foto de Juliana Agarikov">
+                </div>
+                <div class="card__inferior">
+                    <div class="card__icones">
+                        <img class="card__favoritos" src="images/Favoritos.svg" alt="Favoritar">
+                        <img class="card__carrinho" src="images/Compras.svg" alt="Acessar carrinho">
+                    </div>
+                    
+                    <a href="#" class="card__botao">Saiba mais</a>
+                </div>
+            </div>
+
+
+        </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            });
+    </script>
+    
 </body>
 </html>
