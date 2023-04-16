@@ -9,7 +9,7 @@
 
 .banner__principal__titulo {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .banner__principal__subtitulo {
@@ -40,4 +40,31 @@
     background: url(../images/Lupa.svg);
     background-repeat: no-repeat;
     background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__principal__titulo {
+        font-size: 2.25rem;
+    }
+
+    .banner__principal__busca::placeholder {
+        font-size: 1rem;
+        background-position: 4em;
+    }
+
+    .banner__principal__busca {
+        padding: 1.5em;
+        width: 55%;
+    }
+
+    .banner__principal {
+        padding: 5em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__principal__busca {
+        padding: 1.5em;
+        width: 35%;
+    }
 }
