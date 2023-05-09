@@ -1,14 +1,5 @@
-const notas = [10, 6.5, 8, 7.5];
-let somaDasNotas = 0;
-/*
-notas.forEach(function(nota) {
-    somaDasNotas += nota;
-});
-*/
+let nomes = ['Maria julia', 'ana breatriz', 'caio Cavalcanti'];
 
-notas.forEach(nota => somaDasNotas += nota);
+const nomesCaps = nomes.map (nome => nome.toUpperCase())
 
-let media = somaDasNotas / notas.length
-
-console.log(somaDasNotas);
-console.log(media);
+console.log(nomesCaps)
