@@ -1,5 +1,7 @@
-let nomes = ['Maria julia', 'ana breatriz', 'caio Cavalcanti'];
+const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
 
-const nomesCaps = nomes.map (nome => nome.toUpperCase())
+ // const meuSet = new Set(nomes);
 
-console.log(nomesCaps)
+const nomesAtualizados = [...new Set(nomes)meuSet];
+
+console.log(nomesAtualizados);
