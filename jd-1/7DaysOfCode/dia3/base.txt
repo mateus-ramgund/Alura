@@ -1,0 +1,25 @@
+FRONT-END
+
+Qual tecnologia você deseja estudar no momento?
+React
+Vue
+
+BACK-END
+
+Qual tecnologia você deseja estudar no momento?
+C#
+Java
+
+
+Como você deseja se especializar?
+Como ${area}
+Como FullStack
+
+
+Quais tecnologias a mais você deseja aprender?
+
+em mais alguma tecnologia que você gostaria de aprender?
+
+Adicionar
+
+Você pretende seguir na área de ${area}, vai estudar ${tecnologia}, pretende seguir ${especializacao.toLowerCase()) e quer aprender ${listaDeTecnologias}.
