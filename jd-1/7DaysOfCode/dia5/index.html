@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1 id="titulo">7DaysOfCode - Dia 5</h1>
+        <h2 id="subtitulo">Lista de Compras</h2>
+        <div id="comunicador">
+            <h3 id="pergunta">Você deseja adicionar uma comida na sua lista?</h3>
+            <input type="button" value="Sim" class="botao desejo" data-sim>
+            <input type="button" value="Não, desejo finalizar" class="botao desejo" data-nao>
+            <input type="text" name="comida" id="comida" data-comida>
+
+            <div id="escolher-categoria">
+                <label for="categoria">Qual a categoria da comida?</label>
+                <select name="categoria" id="categoria">
+                    <option value="frutas">Frutas</option>
+                    <option value="laticinios">Laticínios</option>
+                    <option value="congelados">Congelados</option>
+                    <option value="doces">Doces</option>
+                </select>
+                <input type="button" value="Adicionar" class="botao" id="adicionar" data-add>
+                <input type="button" value="Finalizar" class="botaofinal" data-finalizar>
+            </div>
+        </div>
+        <div id="lista-de-compras">
+
+        </div>
+        <input type="button" value="Voltar" class="botaofinal voltar" data-voltar>
+    </main>
+    <script src="app/main.js"></script>
+</body>
+</html>

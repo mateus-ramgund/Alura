@@ -1,0 +1,114 @@
+* {
+    --cor-bg: #F6F1F1;
+    --cor-primaria:  #19A7CE;
+    --cor-secundaria: #146C94;
+    --cor-maisclara: #AFD3E2;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-bg);
+    color: var(--cor-primaria);
+}
+
+#comunicador {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo {
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+#subtitulo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-bg);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#pergunta {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.botao {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: var(--cor-maisclara);
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-bg);
+}
+
+.botaofinal {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-bg);
+}
+
+.botaofinal:hover {
+    cursor: pointer;
+    background-color: var(--cor-maisclara);
+    color: var(--cor-secundaria);
+}
+
+
+#comida {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: var(--cor-maisclara);
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    display: none;
+}
+
+#adicionar {
+    display: none;
+}
+
+#escolher-categoria {
+    display: none;
+    flex-direction: column;
+}
+
+#categoria {
+    font-size: 1.5em;
+    margin: 10px 20px;
+    background-color: var(--cor-maisclara);
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.voltar {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+#lista-de-compras {
+    display: none;
+}
