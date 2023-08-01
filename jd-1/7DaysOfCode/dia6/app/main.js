@@ -52,14 +52,20 @@ function telaDeAdicionar () {
 adicionar.addEventListener('click', adicionarComida)
 
 function adicionarComida () {
-    if (categoria.value == 'frutas') {
-        frutas.push(comida.value);
-    } else if (categoria.value == 'laticinios') {
-        laticinios.push(comida.value);
-    } else if (categoria.value == 'congelados') {
-        congelados.push(comida.value);
-    } else if (categoria.value == 'doces') {
-        doces.push(comida.value);
+    erro.style.display = 'none';
+    if (comida.value == '') {
+        erro.style.display = 'block';
+        erro.innerHTML = 'O campo não pode estar em branco, digite alguma comida.';
+    } else {
+        if (categoria.value == 'frutas') {
+            frutas.push(comida.value);
+        } else if (categoria.value == 'laticinios') {
+            laticinios.push(comida.value);
+        } else if (categoria.value == 'congelados') {
+            congelados.push(comida.value);
+        } else if (categoria.value == 'doces') {
+            doces.push(comida.value);
+        }
     }
     console.log(frutas, laticinios, congelados, doces);
     comida.value = '';
@@ -79,6 +85,7 @@ function finalizarLista () {
     } else {
         botaoRemover.style.display = 'block'
     }
+    erro.style.display = 'none';
 }
 
 voltar.addEventListener('click', voltarParaOInicio);
@@ -135,6 +142,7 @@ function removerComidaDaLista () {
         let comidaASerRemovida = doces.indexOf(campoDeTextoRemoverComida.value);
         doces.splice(comidaASerRemovida, 1);
     } else {
+        erro.innerHTML = 'Comida não encontrada! Tente novamente.'
         erro.style.display = 'block';
     }
     console.log(frutas, laticinios, congelados, doces);

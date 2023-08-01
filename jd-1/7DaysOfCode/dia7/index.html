@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="conteudo">
+        <h1 id="titulo">7DaysOfCode - Dia 7</h1>
+        <h2 id="subtitulo">Calculadora</h2>
+        <p id="pergunta">Escolha o cálculo que você deseja realizar:</p>
+        <div id="botoes">
+            <input type="button" value="Soma" class="botao calculo" data-soma>
+            <input type="button" value="Subtração" class="botao calculo" data-subtracao>
+            <input type="button" value="Multiplicação" class="botao calculo" data-multiplicacao>
+            <input type="button" value="Divisão" class="botao calculo" data-divisao>
+            <input type="button" value="Sair" class="botao calculo sair" data-sair>
+        </div>
+        <div id="area-de-calculo">
+            <input type="number" name="primeiro-numero" id="primeiro-numero" class="numeros" data-primeiro-numero>
+            <input type="number" name="segundo-numero" id="segundo-numero" class="numeros" data-segundo-numero>
+            <input type="button" value="Calcular" class="botao calcular" data-calcular>
+        </div>
+        <div id="area-de-resposta">
+            <p id="resposta"></p>
+        </div>
+        <input type="button" value="Voltar" class="botao voltar" data-voltar>
+    </main>
+    <script src="app/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    --cor-bg: #FFEADD;
+    --cor-clara: #FCAEAE;
+    --cor-media: #FF8989;
+    --cor-escura: #FF6666;
+}
+
+body {
+    background-color: var(--cor-bg);
+    color: var(--cor-media);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#conteudo {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid var(--cor-media);
+    border-radius: 8px;
+}
+
+#botoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: var(--cor-media);
+    color: var(--cor-bg);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.botao {
+    color: var(--cor-bg);
+    border: 1px solid var(--cor-media);
+    border-radius: 5px;
+    background-color: var(--cor-media);
+    font-size: 1em;
+    padding: 5px;
+}
+
+.botao:hover {
+    background-color: var(--cor-escura);
+    cursor: pointer;
+}
+
+.sair {
+    color: var(--cor-media);
+    background-color: var(--cor-bg);
+}
+
+.sair:hover {
+    color: var(--cor-bg);
+    background-color: var(--cor-media);
+}
+
+.numeros {
+    border: 1px solid var(--cor-media);
+    border-radius: 5px;
+    height: 27px;
+    color: var(--cor-media);
+}
+
+#area-de-calculo {
+    display: none;
+}
+
+#area-de-resposta {
+    display: none;
+}
+
+.voltar {
+    display: none;
+}
