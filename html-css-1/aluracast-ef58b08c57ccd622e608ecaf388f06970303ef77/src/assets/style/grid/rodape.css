@@ -1,0 +1,82 @@
+.rodape {
+    display: grid;
+    grid-template-areas: 
+    "imagem android android voltar back play next passar passar passar passar passar"
+    "imagem hipsters tempo1 barra barra barra barra barra tempo2 diminuir volume aumentar";
+    grid-template-columns: auto 2fr auto 1.5fr auto auto auto 1fr auto 1.5fr auto auto;
+    column-gap: 0.5rem;
+    align-self: center;
+    grid-template-rows: 50% 50%;
+}
+
+.rodape__imagem {
+    grid-area: imagem;
+}
+
+.rodape__titulo {
+    grid-area: android;
+    align-self: center;
+}
+
+.rodape__subtitulo {
+    grid-area: hipsters;
+    align-self: center;
+}
+
+.rodape__horario--inicio {
+    grid-area: tempo1;
+    align-self: center;
+}
+
+.rodape__botao--voltar {
+    grid-area: voltar;
+    align-self: center;
+    justify-self: right;
+}
+
+.rodape__botao--anterior {
+    grid-area: back;
+    align-self: center;
+}
+
+.rodape__botao--play {
+    grid-area: play;
+    align-self: center;
+}
+
+.rodape__botao--avancar {
+    grid-area: next;
+    align-self: center;
+}
+
+.rodape__botao--proximo {
+    grid-area: passar;
+    align-self: center;
+    justify-self: left;
+}
+
+.rodape__horario--termino {
+    grid-area: tempo2;
+    align-self: center;
+}
+
+.barra__container--reproducao {
+    grid-area: barra;
+    align-self: center;
+}
+
+.rodape__botao--volume-down {
+    grid-area: diminuir;
+    align-self: center;
+    justify-self: right;
+}
+
+.barra__container--volume {
+    grid-area: volume;
+    align-self: center;
+}
+
+.rodape__botao--volume-up {
+    grid-area: aumentar;
+    align-self: center;
+}
