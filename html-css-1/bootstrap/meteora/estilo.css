@@ -1,0 +1,22 @@
+.texto-menor {
+    font-size: 13px;
+}
+
+.divs-facilidades {
+    width: 325px;
+}
+
+.green-text {
+    color: #DAFF01;
+}
+
+.purple-btn {
+    background-color: #9353FF !important;
+    border: 1px solid #9353FF !important;
+    color: white !important;
+}
+
+.purple-btn:hover {
+    background-color: white !important;
+    color: #9353FF !important;
+}
