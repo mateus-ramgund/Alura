@@ -9,5 +9,3 @@ export class Negociacoes {
         return this.negociacoes;
     }
 }
-// Array <Negociacao> == Negociacao[]
-// ReadonlyArray<Negociacao> == readonly Negociacao[]
