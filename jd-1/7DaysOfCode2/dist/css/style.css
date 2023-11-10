@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    background-color: #17162E;
+    color: white;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#search {
+    background-color: #454558;
+    color: #8a8a8a;
+    border: none;
+    border-radius: 8px;
+    padding: 25px;
+    width: 634px;
+    margin: 15px auto;
+    background-image: url(../images/icons/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 590px;
+}
+
+#search:focus {
+    border: none;
+    outline: none;
+}
+
+#search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#label-mostrar-favoritos {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+/* CARD FILMES */
+
+.container {
+    background-color: #1D1C3B;
+    box-sizing: 0px 10px 6px rgb(0, 0, 0);
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 30px;
+    text-align: left;
+}
+
+
+/* LADO ESQUERDO */
+
+.left {
+    display: flex;
+    gap: 64px;
+}
+
+/* IMAGEM FILME */
+
+.cartaz-filme {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.253);
+    border-radius: 100%;
+    min-width: 139px !important;
+    max-height: 139px !important;
+    object-fit: cover;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 24px;
+    justify-content: center;
+}
+
+.detalhes {
+    display: flex;
+    gap: 20px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.informacoes img {
+    margin-right: 5px;
+}
+
+.titulo {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.numeros {
+    display: flex;
+    align-items: start;
+}
+
+.numeros p {
+    margin: 0;
+}
+
+.favorite {
+    grid-area: fav;
+    display: flex;
+    align-items: start;
+}
+
+.favorite label {
+    cursor: pointer;
+}
+
+.fav {
+    display: none;
+}
+
+/* LADO DIREITO */ 
+
+.right {
+    color: #ACACAC;
+    font-weight: 500;
+    font-size: 18px;
+}
