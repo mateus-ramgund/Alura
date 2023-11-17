@@ -12,7 +12,13 @@
 <body>
     <header>
         <h1>Filmes Populares</h1>
-        <input type="search" name="search" id="search" placeholder="Digitar algum filme para pesquisar...">
+        <div class="search-div">
+            <form id="search-form" action="#">
+                <input type="text" name="search" id="search" placeholder="Digitar algum filme para pesquisar...">
+                <button type="submit" id="search-button"><img src="images/icons/search-icon.svg" alt="Pesquisar"></button>
+            </form>
+            
+        </div>
         <div id="div-mostrar-favoritos">
             <input type="checkbox" name="mostrar-favoritos" id="mostrar-favoritos">
             <label id="label-mostrar-favoritos" for="mostrar-favoritos">Mostrar meus filmes favoritos apenas</label>

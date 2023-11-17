@@ -19,18 +19,38 @@ h1 {
     font-size: 36px;
 }
 
+.search-div {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: center;
+}
+
+#search-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 27%;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
 #search {
     background-color: #454558;
     color: #8a8a8a;
     border: none;
     border-radius: 8px;
     padding: 25px;
-    width: 634px;
     margin: 15px auto;
-    background-image: url(../images/icons/search-icon.svg);
+    min-width: 46vw;
+    /*background-image: url(../images/icons/search-icon.svg);
     background-repeat: no-repeat;
     background-position: right;
-    background-position-x: 590px;
+    background-position-x: 590px;*/
 }
 
 #search:focus {
@@ -127,14 +147,24 @@ h2 {
     grid-area: fav;
     display: flex;
     align-items: start;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.favorite:hover {
+    color: rgba(255, 255, 255, 0.651);
 }
 
 .favorite label {
     cursor: pointer;
 }
 
-.fav {
-    display: none;
+.link-fav {
+    display: flex;
+    align-items: start;
+    text-decoration: none;
+    color: white;
 }
 
 /* LADO DIREITO */ 
